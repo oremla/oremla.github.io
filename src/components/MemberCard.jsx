@@ -1,6 +1,6 @@
 export default function MemberCard({ icon, username, roles = [], isStaff }) {
     const profile = icon === 'default'
-    ? 'assets/blank-profile-picture.png'
+    ? 'https://imgs.search.brave.com/PwfyGioag_5790G-zCgxkNLwxWMSp5nqoJONbBxzM5o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNS8x/MC8wNS8yMi8zNy9i/bGFuay1wcm9maWxl/LXBpY3R1cmUtOTcz/NDYwXzEyODAucG5n'
     : icon
 
     return (
