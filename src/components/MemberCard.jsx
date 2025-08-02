@@ -1,14 +1,16 @@
 export default function MemberCard({ icon, username, roles = [], isStaff }) {
-    const profile = icon === 'default'
-    ? 'https://imgs.search.brave.com/PwfyGioag_5790G-zCgxkNLwxWMSp5nqoJONbBxzM5o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNS8x/MC8wNS8yMi8zNy9i/bGFuay1wcm9maWxl/LXBpY3R1cmUtOTcz/NDYwXzEyODAucG5n'
+    const profile = icon === 'default' 
+    ? 'https://images.icon-icons.com/1769/PNG/512/4092564-about-mobile-ui-profile-ui-user-website_114033.png'
     : icon
 
     return (
         <article className="w-1/2 sm:w-1/3 md:w-1/6 lg:w-[12%]">
             <section className="bg-neutral-900 bg-opacity-55 p-3 rounded-t-md">
-                <div
-                    className={`bg-[url(${profile})] bg-cover bg-center rounded aspect-square`}
-                ></div>
+                <img
+                    src={profile}
+                    alt={username}
+                    className="rounded aspect-square object-cover w-full"
+                />
             </section>
             <section className="bg-neutral-900 bg-opacity-55 p-3 flex flex-col gap-3 rounded-b-md">
                 <div className="text-white text-lg sm:text-xl md:text-2xl text-center font-bold break-words flex flex-col items-center gap-1">
