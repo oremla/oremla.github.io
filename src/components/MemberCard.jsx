@@ -1,6 +1,6 @@
 export default function MemberCard({ icon, username, roles = [], isStaff }) {
     const profile = icon === 'default'
-    ? 'src/assets/blank-profile-picture.png'
+    ? 'assets/blank-profile-picture.png'
     : icon
 
     return (
